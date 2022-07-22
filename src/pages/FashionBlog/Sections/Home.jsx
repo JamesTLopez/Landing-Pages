@@ -46,18 +46,15 @@ export default Home;
 const HomeSectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  height: 200vh;
-  max-height: 2000px;
   width: 100%;
-
+  background: linear-gradient(
+    to bottom,
+    #eb5757 0%,
+    #eb5757 53%,
+    #f5f2e9 50%,
+    #f5f2e9 100%
+  );
   main {
-    background: linear-gradient(
-      to bottom,
-      #eb5757 0%,
-      #eb5757 58%,
-      #f5f2e9 50%,
-      #f5f2e9 100%
-    );
   }
 `;
 
@@ -86,7 +83,7 @@ const BannerSection = styled.section`
       h3 {
         letter-spacing: 10px;
         font-weight: bold;
-        font-size: 13.75rem;
+        font-size: 12rem;
       }
 
       h2 {
@@ -105,6 +102,7 @@ const BannerSection = styled.section`
     }
     .img_container {
       img {
+        width: 100%;
         aspect-ratio: 16/9;
         object-fit: cover;
         object-position: center;

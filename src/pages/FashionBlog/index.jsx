@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Home from "./Sections/Home";
 import { AiFillInstagram, AiOutlineGoogle } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
+import LatestStories from "./Sections/LatestStories";
 
 function FashionBlog() {
   return (
@@ -24,6 +25,7 @@ function FashionBlog() {
         </div>
       </header>
       <Home />
+      <LatestStories />
     </Container>
   );
 }
