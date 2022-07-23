@@ -96,8 +96,8 @@ const BannerSection = styled.section`
         position: relative;
         left: 50px;
         top: -30px;
-        height: 10rem;
-        width: 10rem;
+        height: 8rem;
+        width: 8rem;
       }
     }
     .img_container {

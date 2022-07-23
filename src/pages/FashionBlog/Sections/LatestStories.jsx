@@ -52,10 +52,19 @@ const LatestContainer = styled.section`
 
   width: 100%;
   background-color: #000000;
-  margin: 50px 0 50px 0;
+  @media screen and (max-width: 800px) {
+    header {
+      .wrapper {
+        flex-direction: column;
+        #nav {
+          padding: 0;
+        }
+      }
+    }
+  }
+  min-height: 100vh;
   main {
     display: flex;
-    justify-content: center;
     max-width: 1200px;
     padding: 30px 25px 30px 25px;
     gap: 40px;
@@ -63,10 +72,10 @@ const LatestContainer = styled.section`
   .panel_1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 375px;
     color: white;
-    gap: 50px;
+    gap: 90px;
     h1 {
       font-size: 2.7rem;
       margin: 10px 0 10px 0;
@@ -89,7 +98,7 @@ const LatestContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
     max-width: 700px;
     color: white;
     h1 {
@@ -103,7 +112,6 @@ const LatestContainer = styled.section`
     }
     img {
       width: 100%;
-
       aspect-ratio: 16/11;
       object-fit: cover;
       object-position: center;
@@ -113,8 +121,8 @@ const LatestContainer = styled.section`
 
   @media screen and (max-width: 800px) {
     main {
-      flex-direction: column;
       justify-content: center;
+      flex-direction: column-reverse;
       align-items: center;
       text-align: center;
     }
